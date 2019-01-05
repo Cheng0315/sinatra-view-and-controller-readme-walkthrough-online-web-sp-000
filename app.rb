@@ -6,6 +6,7 @@ class App < Sinatra::Base
   end
 
   post '/reverse' do
+    @name = params["name"].reverese
     erb :reversed
   end
 
