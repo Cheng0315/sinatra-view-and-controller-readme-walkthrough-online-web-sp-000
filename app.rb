@@ -13,6 +13,8 @@ class App < Sinatra::Base
   get '/friends' do
     # Write your code here!
     @friends = params[:friends]
-    "#{@friends[1]}"
+    @friends.each do |friend|
+      "friend"
+    end
   end
 end
